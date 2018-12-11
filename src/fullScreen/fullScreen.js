@@ -13,13 +13,27 @@
  * @returns {boolean} Indicates if mode switch was successful.
  */
 function toggleFullscreen(forceFullscreen) {
-    if(!window.Windows) return false;
+    if (!window.Windows){
+      const doc = window.document;
+      const docEl = doc.documentElement;
 
-    var applicationView = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
+      const requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+      const cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
 
-    var switchToFullScreen = (!applicationView.isFullScreenMode) || forceFullscreen;
+      if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+        requestFullScreen.call(docEl);
+      }
+      else {
+        cancelFullScreen.call(doc);
+      }
+    } 
+    else {
+      const applicationView = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
 
-    return switchToFullScreen
+      const switchToFullScreen = (!applicationView.isFullScreenMode) || forceFullscreen;
+
+      return switchToFullScreen
         ? applicationView.tryEnterFullScreenMode()
         : applicationView.exitFullScreenMode();
+    }
 }
