@@ -11,4 +11,4 @@ https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/com
 https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/fullScreen/fullsScreen.js
 https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/timeline/timeline.js
 https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/messageDialog/messageDialog.js
-https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/share.js
+https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/share/share.js
