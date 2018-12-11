@@ -28,7 +28,7 @@ function toggleFullscreen(forceFullscreen) {
       }
     } 
     else {
-      const applicationView = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
+      const applicationView = window.Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
 
       const switchToFullScreen = (!applicationView.isFullScreenMode) || forceFullscreen;
 
