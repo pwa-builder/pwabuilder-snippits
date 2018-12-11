@@ -17,10 +17,7 @@
 
 async function share(title, text, url) {
   if (window.Windows) {
-    const DataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager;
-    const RandomAccessStreamReference = Windows.Storage.Streams.RandomAccessStreamReference;
-    const ShareProvider = Windows.ApplicationModel.DataTransfer.ShareProvider;
-    const Uri = Windows.Foundation.Uri;
+    const DataTransferManager = window.Windows.ApplicationModel.DataTransfer.DataTransferManager;
 
     const dataTransferManager = DataTransferManager.getForCurrentView();
     dataTransferManager.addEventListener("datarequested", (ev) => {
@@ -28,7 +25,7 @@ async function share(title, text, url) {
 
       data.properties.title = title;
       data.properties.url = url;
-      data.setText(t3ext);
+      data.setText(text);
     });
 
     dataTransferManager.showShareUI();

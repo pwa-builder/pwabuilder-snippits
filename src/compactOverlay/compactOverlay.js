@@ -13,7 +13,9 @@
  * @returns {Promise} Promise with new mode value (1=CompactOverlay | 0=Default).
  * @see https://raw.githubusercontent.com/pwa-builder/Windows-universal-js-samples/master/win10/images/compactOverlay.png
  */
-async function toggleCompactOverlayMode(forceCompactOverlay = false, videoElement,) {
+async function toggleCompactOverlayMode(forceCompactOverlay = false) {
+  const videoEl = document.querySelector('#ourVideo');
+
   if (window.Windows) {
     const applicationView = Windows.UI.ViewManagement.ApplicationView;
     const currentMode = applicationView.getForCurrentView().viewMode;
@@ -27,10 +29,10 @@ async function toggleCompactOverlayMode(forceCompactOverlay = false, videoElemen
       .then(() => newMode);
   } else if ('pictureInPictureEnabled' in document) {
     // for the web picture in picture api
-    if (videoElement instanceof HTMLVideoElement) {
-      if (videoElement !== document.pictureInPictureElement) {
+    if (videoEl instanceof HTMLVideoElement) {
+      if (videoEl !== document.pictureInPictureElement) {
         try {
-          await videoElement.requestPictureInPicture();
+          await videoEl.requestPictureInPicture();
           return Promise.resolve(1);
         }
         catch(error) {
