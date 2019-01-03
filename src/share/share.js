@@ -28,7 +28,7 @@ async function share(title, text, url) {
       data.setText(text);
     });
 
-    dataTransferManager.showShareUI();
+    DataTransferManager.showShareUI();
 
     return true;
   } else if (navigator.share) {
