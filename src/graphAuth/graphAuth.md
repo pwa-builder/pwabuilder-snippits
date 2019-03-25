@@ -3,13 +3,10 @@
 ## Authenticate with Microsoft Graph 
 
 </div>
-
 <div id="leftSide">
   
 ### Description
 This allows you to authenticate your users with a microsoft account or Acitve Directory account to get access to the graph.
-
-
 ### Required Properties
 
 | Name | Description |
