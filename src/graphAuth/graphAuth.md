@@ -24,13 +24,19 @@ This allows you to authenticate your users with a microsoft account or Acitve Di
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
+<div class="codeBlock">
+  
 ```html
   <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.2.3/js/msal.js"></script>
   <button onclick="authWithGraph('clientIdHere')">Login</button>
 ```
 
+</div>
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
+<div class="codeBlock">
+  
 ```javascript
 async function authWithGraph(clientID) {
   const scopes = ['User.Read'];
@@ -61,6 +67,8 @@ async function authWithGraph(clientID) {
 }
 
 ```
+
+</div>
 
 </div>
 </div>
