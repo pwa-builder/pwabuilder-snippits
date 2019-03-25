@@ -29,8 +29,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum
   <button onclick="authWithGraph('clientIdHere')">Login</button>
 ```
 
-#### JavaScript
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
 ```javascript
