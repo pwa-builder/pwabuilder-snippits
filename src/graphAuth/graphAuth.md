@@ -1,1 +1,9 @@
 ## Authenticate with Microsoft Graph
+
+```html
+  <!--Follow these docs to register your app and receive a clientID https://github.com/AzureAD/microsoft-authentication-library-for-   js/blob/dev/lib/msal-core/README.md#prerequisite-->
+
+  <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.2.3/js/msal.js"></script>
+
+  <button onclick="authWithGraph('clientIdHere')">Login</button>
+```
