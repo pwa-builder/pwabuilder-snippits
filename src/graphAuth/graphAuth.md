@@ -1,28 +1,26 @@
 ## Authenticate with Microsoft Graph
 
+### Description
+This allows you to authenticate your users with a microsoft account or Acitve Directory account to get access to the graph.
 
-### HTML
+### Required Properties
+
+| Name | Description |
+| --- | --- |
+| scopes | Array of API URLs you are requesting permissions for future Graph API calls |
+| clientID | Follow these docs to register your app and receive a clientID https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-core/README.md#prerequisite |
+
+### Code
+
+#### HTML
 ```html
-  <!--Follow these docs to register your app and receive a clientID https://github.com/AzureAD/microsoft-authentication-library-for-   js/blob/dev/lib/msal-core/README.md#prerequisite-->
-
   <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.2.3/js/msal.js"></script>
-
   <button onclick="authWithGraph('clientIdHere')">Login</button>
 ```
 
-### JavaScript
+#### JavaScript
 
 ```javascript
-/**
- * This allows you to authenticate your users with a microsoft account or Acitve Directory account to get access to the graph
- *
- * @alias Create MSFT Graph Authentication 
- * @method authWithGraph
- * @param {object} [clientID = ""] Follow these docs to register your app and receive a clientID https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-core/README.md#prerequisite
- * @see https://raw.githubusercontent.com/pwa-builder/Windows-universal-js-samples/master/win10/images/graphAuth.png
- */
-
-
 async function authWithGraph(clientID) {
   const scopes = ['User.Read'];
 
