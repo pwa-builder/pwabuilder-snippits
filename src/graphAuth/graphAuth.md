@@ -1,7 +1,10 @@
-## Authenticate with Microsoft Graph
+<div>
 
+## Authenticate with Microsoft Graph 
 ### Description
 This allows you to authenticate your users with a microsoft account or Acitve Directory account to get access to the graph.
+
+</div>
 
 ### Required Properties
 
@@ -50,5 +53,3 @@ async function authWithGraph(clientID) {
 }
 
 ```
-
-<SnippitCode></SnippitCode>
