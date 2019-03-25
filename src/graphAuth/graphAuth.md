@@ -1,10 +1,14 @@
-<div>
+<div id="headerDiv">
 
 ## Authenticate with Microsoft Graph 
+
+</div>
+
+<div id="leftSide">
+  
 ### Description
 This allows you to authenticate your users with a microsoft account or Acitve Directory account to get access to the graph.
 
-</div>
 
 ### Required Properties
 
@@ -12,6 +16,10 @@ This allows you to authenticate your users with a microsoft account or Acitve Di
 | --- | --- |
 | scopes | Array of API URLs you are requesting permissions for future Graph API calls |
 | clientID | Follow these docs to register your app and receive a clientID https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-core/README.md#prerequisite |
+
+</div>
+
+<div id="rightSide">
 
 ### Code
 
@@ -53,3 +61,5 @@ async function authWithGraph(clientID) {
 }
 
 ```
+
+</div>
