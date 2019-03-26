@@ -24,11 +24,7 @@ This allows you to authenticate your users with a microsoft account or Acitve Di
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
-
-<share-button text="oi" mailto="disabled" android="disabled" text="<script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.2.3/js/msal.js"></script>
-  <button onclick="authWithGraph('clientIdHere')">Login</button>">
-  Copy Code
-</share-button>
+<copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html"></copy-button>
 
 
 <div class="codeBlock">
