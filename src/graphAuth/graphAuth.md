@@ -24,7 +24,9 @@ This allows you to authenticate your users with a microsoft account or Acitve Di
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
-<copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html"></copy-button>
+<copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html">
+  Copy Code
+</copy-button>
 
 
 <div class="codeBlock">
