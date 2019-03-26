@@ -24,6 +24,12 @@ This allows you to authenticate your users with a microsoft account or Acitve Di
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
+
+<share-button text="oi">
+  Custom text
+</share-button>
+
+
 <div class="codeBlock">
   
 ```html
