@@ -24,11 +24,15 @@ This allows you to authenticate your users with a microsoft account or Acitve Di
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
-<div class="codeBlock">
+<div class="codeBlockHeader">
+  
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html">
-    Copy
   </copy-button>
   
+</div>
+
+<div class="codeBlock">
+ 
 ```html
   <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.2.3/js/msal.js"></script>
   <button onclick="authWithGraph('clientIdHere')">Login</button>
@@ -38,10 +42,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
-<div class="codeBlock">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.js">
-    Copy
+<div class="codeBlockHeader">
+  
+   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.js">
   </copy-button>
+  
+</div>
+
+<div class="codeBlock">
   
 ```javascript
 async function authWithGraph(clientID) {
