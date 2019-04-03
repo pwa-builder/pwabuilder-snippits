@@ -26,6 +26,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum
 
 <div class="codeBlockHeader">
   
+  <span>Step 1</span>
+  
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html">
   </copy-button>
   
@@ -43,6 +45,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
 
 <div class="codeBlockHeader">
+  
+   <span>Step 2</span>
   
    <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.js">
   </copy-button>
