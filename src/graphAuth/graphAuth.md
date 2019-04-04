@@ -106,7 +106,10 @@ include the following script on your website and *don't forget to update the Cle
 Add a listener for your button, and click away
 
 <div class="codeBlockHeader">
-
+  
+   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.js">
+  </copy-button>
+  
   
 </div>
 
