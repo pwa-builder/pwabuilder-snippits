@@ -16,7 +16,6 @@ You need to get a "client ID" to set up Auth on your website. To get a client ID
 ![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graph.JPG)
 
 
-
 </div>
 
 <div id="rightSide">
