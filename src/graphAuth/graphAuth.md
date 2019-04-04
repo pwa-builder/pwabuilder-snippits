@@ -62,7 +62,7 @@ include the following script on your website and *don't forget to update the Cle
         // Register your app there: https://apps.dev.microsoft.com/portal/register-app & add a web platform to get a Client ID
         // If you already did, retrieve the Client ID from: https://apps.dev.microsoft.com/#/appList
         var msalconfig = {
-            clientID: "f00b905e-55c7-40d0-8ced-7cf54a63ef5c",
+            clientID: "Add-Your-Client-ID",
             redirectUri: location.origin
         };
 
@@ -103,6 +103,13 @@ include the following script on your website and *don't forget to update the Cle
 
 Add a listener for your button, and click away
 
+<div class="codeBlockHeader">
+
+  
+</div>
+
+<div class="codeBlock">
+  
 ```javascript
 
         document.getElementById("login").addEventListener("click", () => {
