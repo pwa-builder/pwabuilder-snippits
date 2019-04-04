@@ -68,14 +68,11 @@ var msalconfig = {
 // Permissions you're requesting to do your future Graph API calls
 var graphAPIScopes = ["https://graph.microsoft.com/contacts.read", "https://graph.microsoft.com/user.read", "https://graph.microsoft.com/sites.readwrite.all"];
 
-// The userAgentApplication object will help you doing the authentication job
-// And get the token to do Graph API calls
+
 userAgentApplication = new Msal.UserAgentApplication(msalconfig.clientID, null, loginCallback, {
     redirectUri: msalconfig.redirectUri
 });
 
-
-//if logedin, display user
 if(userAgentApplication && userAgentApplication.getUser()) {
     document.getElementById('login').innerHTML =  "hello "+userAgentApplication.getUser().name;
 }
@@ -95,7 +92,6 @@ function loginCallback(errorDesc, token, error, tokenType) {
         console.log("You can now do calls to Graph API starting from here.");
     }
 }
-
 ```
 </div>
 
@@ -116,12 +112,10 @@ Add a listener for your button, and click away
 <div class="codeBlock">
   
 ```javascript
-
 document.getElementById("login").addEventListener("click", () => {
     // Call this code on the click event of your login button
     userAgentApplication.loginRedirect(graphAPIScopes);   
 });
-
 ```
 
 </div>
