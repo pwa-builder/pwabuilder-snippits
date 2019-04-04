@@ -98,6 +98,8 @@ include the following script on your website and *don't forget to update the Cle
         }
 
 ```
+</div>
+
 
 #### Step 3
 
@@ -121,5 +123,3 @@ Add a listener for your button, and click away
 
 </div>
 
-</div>
-</div>
