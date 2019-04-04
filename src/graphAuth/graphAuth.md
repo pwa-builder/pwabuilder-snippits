@@ -32,8 +32,8 @@ Add this code to your HTML page:
 <div class="codeBlock">
  
 ```html
-        <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.2.3/js/msal.js"></script>
-        <button id="login" >Login</button>
+<script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.2.3/js/msal.js"></script>
+<button id="login" >Login</button>
 ```
 
 </div>
@@ -54,47 +54,47 @@ include the following script on your website and *don't forget to update the Cle
   
 ```javascript
 // MSAL lib
-        var userAgentApplication;
-        // User object return by MSAL lib
-        var user;
+var userAgentApplication;
+// User object return by MSAL lib
+var user;
 
-        // Register your app there: https://apps.dev.microsoft.com/portal/register-app & add a web platform to get a Client ID
-        // If you already did, retrieve the Client ID from: https://apps.dev.microsoft.com/#/appList
-        var msalconfig = {
-            clientID: "Add-Your-Client-ID",
-            redirectUri: location.origin
-        };
+// Register your app there: https://apps.dev.microsoft.com/portal/register-app & add a web platform to get a Client ID
+// If you already did, retrieve the Client ID from: https://apps.dev.microsoft.com/#/appList
+var msalconfig = {
+    clientID: "Add-Your-Client-ID",
+    redirectUri: location.origin
+};
 
-        // Permissions you're requesting to do your future Graph API calls
-        var graphAPIScopes = ["https://graph.microsoft.com/contacts.read", "https://graph.microsoft.com/user.read", "https://graph.microsoft.com/sites.readwrite.all"];
+// Permissions you're requesting to do your future Graph API calls
+var graphAPIScopes = ["https://graph.microsoft.com/contacts.read", "https://graph.microsoft.com/user.read", "https://graph.microsoft.com/sites.readwrite.all"];
 
-        // The userAgentApplication object will help you doing the authentication job
-        // And get the token to do Graph API calls
-        userAgentApplication = new Msal.UserAgentApplication(msalconfig.clientID, null, loginCallback, {
-            redirectUri: msalconfig.redirectUri
-        });
+// The userAgentApplication object will help you doing the authentication job
+// And get the token to do Graph API calls
+userAgentApplication = new Msal.UserAgentApplication(msalconfig.clientID, null, loginCallback, {
+    redirectUri: msalconfig.redirectUri
+});
 
 
-        //if logedin, display user
-        if(userAgentApplication && userAgentApplication.getUser()) {
-            document.getElementById('login').innerHTML =  "hello "+userAgentApplication.getUser().name;
-        }
+//if logedin, display user
+if(userAgentApplication && userAgentApplication.getUser()) {
+    document.getElementById('login').innerHTML =  "hello "+userAgentApplication.getUser().name;
+}
 
-        function showError(endpoint, error, errorDesc) {
-            var formattedError = JSON.stringify(error, null, 4);
-            if (formattedError.length < 3) {
-                formattedError = error;
-            }
-            console.error(error);
-        }
+function showError(endpoint, error, errorDesc) {
+    var formattedError = JSON.stringify(error, null, 4);
+    if (formattedError.length < 3) {
+        formattedError = error;
+    }
+    console.error(error);
+}
 
-        function loginCallback(errorDesc, token, error, tokenType) {
-            if (errorDesc) {
-                showError(msal.authority, error, errorDesc);
-            } else {
-                console.log("You can now do calls to Graph API starting from here.");
-            }
-        }
+function loginCallback(errorDesc, token, error, tokenType) {
+    if (errorDesc) {
+        showError(msal.authority, error, errorDesc);
+    } else {
+        console.log("You can now do calls to Graph API starting from here.");
+    }
+}
 
 ```
 </div>
@@ -117,10 +117,10 @@ Add a listener for your button, and click away
   
 ```javascript
 
-        document.getElementById("login").addEventListener("click", () => {
-            // Call this code on the click event of your login button
-            userAgentApplication.loginRedirect(graphAPIScopes);   
-        });
+document.getElementById("login").addEventListener("click", () => {
+    // Call this code on the click event of your login button
+    userAgentApplication.loginRedirect(graphAPIScopes);   
+});
 
 ```
 
