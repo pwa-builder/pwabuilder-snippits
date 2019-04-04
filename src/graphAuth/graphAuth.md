@@ -11,7 +11,7 @@
 A simple script to authenticate your users with a microsoft account or Acitve Directory account to get access to the graph.
 
 ### Prerequisite
-You need to get a "client ID" to set up Auth on your website. To get a client ID visit [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and login with your [Microsoft Account](https://login.live.com/).
+You need to get a "client ID" to set up Auth on your website. To get a client ID visit [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and login with your [Microsoft Account](https://login.live.com/). If you already have a client ID, retrieve it from: [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList).
 
 ![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graph.JPG)
 
@@ -53,21 +53,15 @@ include the following script on your website and *don't forget to update the Cle
 <div class="codeBlock">
   
 ```javascript
-// MSAL lib
 var userAgentApplication;
-// User object return by MSAL lib
 var user;
 
-// Register your app there: https://apps.dev.microsoft.com/portal/register-app & add a web platform to get a Client ID
-// If you already did, retrieve the Client ID from: https://apps.dev.microsoft.com/#/appList
 var msalconfig = {
     clientID: "Add-Your-Client-ID",
     redirectUri: location.origin
 };
 
-// Permissions you're requesting to do your future Graph API calls
 var graphAPIScopes = ["https://graph.microsoft.com/contacts.read", "https://graph.microsoft.com/user.read", "https://graph.microsoft.com/sites.readwrite.all"];
-
 
 userAgentApplication = new Msal.UserAgentApplication(msalconfig.clientID, null, loginCallback, {
     redirectUri: msalconfig.redirectUri
