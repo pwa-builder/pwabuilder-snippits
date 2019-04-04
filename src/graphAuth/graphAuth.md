@@ -13,7 +13,7 @@ A simple script to authenticate your users with a microsoft account or Acitve Di
 ### Prerequisite
 You need to get a "client ID" to set up Auth on your website. To get a client ID visit [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and login with your [Microsoft Account](https://login.live.com/).
 
-
+![graph login](https://github.com/pwa-builder/pwabuilder-snippits/blob/master/src/graphAuth/graph.JPG)
 
 </div>
 
