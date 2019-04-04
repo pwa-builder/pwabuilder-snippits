@@ -14,15 +14,12 @@ A simple script to authenticate your users with a microsoft account or Acitve Di
 You need to get a "client ID" to set up Auth on your website. To get a client ID visit [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and login with your [Microsoft Account](https://login.live.com/).
 
 
+
 </div>
 
 <div id="rightSide">
 
-### Code
-
-Set up site authentication with just a few lines of code.
-
-#### Step 1
+### Step 1
 
 Add this code to your HTML page: 
 
@@ -41,7 +38,7 @@ Add this code to your HTML page:
 </div>
 
  
-#### Step 2
+### Step 2
 
 include the following script on your website and *don't forget to update the Cleint ID with the ID from [apps.dev.microsoft.com](https://apps.dev.microsoft.com)*.  You will also need to configure your callback URL while there.
 
@@ -103,7 +100,7 @@ include the following script on your website and *don't forget to update the Cle
 
 
 
-#### Step 3
+### Step 3
 
 Add a listener for your button, and click away
 
