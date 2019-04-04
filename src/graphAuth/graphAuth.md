@@ -40,7 +40,7 @@ Add this code to your HTML page:
 
 </div>
 
-
+ 
 #### Step 2
 
 include the following script on your website and *don't forget to update the Cleint ID with the ID from [apps.dev.microsoft.com](https://apps.dev.microsoft.com)*.  You will also need to configure your callback URL while there.
