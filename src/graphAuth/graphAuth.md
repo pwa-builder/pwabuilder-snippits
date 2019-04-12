@@ -50,7 +50,7 @@ include the following script on your website and *don't forget to update the Cle
   
 </div>
 
-<div class="codeBlock javascript hljs">
+<div class="codeBlock">
   
 ```javascript
 var userAgentApplication;
