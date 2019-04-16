@@ -4,7 +4,6 @@
 
 </div>
 
-<div id="contentContainer">
 <div id="leftSide">
   
 ### Description
@@ -111,8 +110,6 @@ async function authWithGraph(clientID) {
 }
 
 ```
-
-</div>
 
 </div>
 
