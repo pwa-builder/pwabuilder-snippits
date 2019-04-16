@@ -20,7 +20,7 @@ A simple script that uses the [Web Share API](https://developers.google.com/web/
 Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/share/share.html">
   </copy-button>
 </div>
 
@@ -41,7 +41,7 @@ include the following script on your website and *don't forget to update the Cle
 
 <div class="codeBlockHeader">
   
-   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.js">
+   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/share/share.js">
   </copy-button>
   
 </div>
