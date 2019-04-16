@@ -28,7 +28,7 @@ Add this code to your HTML page:
  
 ```html
 <button onclick="getLocation()">
-  Share
+  Get Location
 </button>
 ```
 
