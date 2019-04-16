@@ -19,9 +19,9 @@ This call returns the Contacts for the signed in user from the Microsoft Graph A
 
 <div id="rightSide">
 
-### Code
+### Step 1
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
+Add this code to your HTML page:
 
 <div class="codeBlockHeader">
   
@@ -39,7 +39,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum
 
 </div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada ipsum at ex luctus viverra.
+### Step 2
+
+Include the following script on your website and *don't forget to update the Cleint ID with the ID from [apps.dev.microsoft.com](https://apps.dev.microsoft.com)*.  You will also need to configure your callback URL while there.
 
 <div class="codeBlockHeader">
   
@@ -113,4 +115,26 @@ async function authWithGraph(clientID) {
 </div>
 
 </div>
+
+### Step 3
+
+Add a listener for your button, and click away
+
+<div class="codeBlockHeader">
+  
+   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphContacts/graphContacts.js">
+  </copy-button>
+  
+  
+</div>
+
+<div class="codeBlock">
+  
+```javascript
+document.getElementById("login").addEventListener("click", () => {
+    // Call this code on the click event of your login button
+    userAgentApplication.loginRedirect(graphAPIScopes);   
+});
+```
+
 </div>
