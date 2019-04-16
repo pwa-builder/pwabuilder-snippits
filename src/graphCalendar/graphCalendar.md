@@ -4,6 +4,7 @@
 
 </div>
 
+<div id="contentContainer">
 <div id="leftSide">
   
 ### Description
@@ -133,5 +134,7 @@ document.getElementById("login").addEventListener("click", () => {
     userAgentApplication.loginRedirect(graphAPIScopes);   
 });
 ```
+
+</div>
 
 </div>
