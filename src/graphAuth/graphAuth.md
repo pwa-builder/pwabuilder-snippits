@@ -4,6 +4,7 @@
 
 </div>
 
+<div id="contentContainer">
 <div id="leftSide">
   
 ### Description
