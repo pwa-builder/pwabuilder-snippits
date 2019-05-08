@@ -9,7 +9,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 async function install() {
-  if (deferredPrmopt) {
+  if (deferredPrompt) {
     deferredPrompt.prompt();
 
     const choiceResult = await deferredPrompt.userChoice();
