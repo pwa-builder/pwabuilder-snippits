@@ -8,7 +8,7 @@
 <div id="leftSide">
   
 ### Description
-A simple script to authenticate your users with a microsoft account or Acitve Directory account to get access to the graph.
+A simple script to authenticate your users with a Microsoft account or Active Directory account to get access to the graph.
 
 ### Prerequisite
 You need to get a "client ID" to set up Auth on your website. To get a client ID visit [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and login with your [Microsoft Account](https://login.live.com/). If you already have a client ID, retrieve it from: [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList).
