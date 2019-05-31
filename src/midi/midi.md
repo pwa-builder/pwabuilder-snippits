@@ -13,7 +13,7 @@ Web MIDI can be a powerful way to connect MIDI hardware to your web apps.  MIDI 
  - 1: the numeric value of the note place
  - 2: the pressure of the note (strength)
 
-In this demo, we are only returning the numeric value of the MIDI note, but it's not hard to pull the other values from the object as well.  You can learn more about Web MIDI from the (MDN Web Docs for Web MIDI APIs)[https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess]
+In this demo, we are only returning the numeric value of the MIDI note, but it's not hard to pull the other values from the object as well.  You can learn more about Web MIDI from the [MDN Web Docs for Web MIDI APIs](https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess)
 
 </div>
 
