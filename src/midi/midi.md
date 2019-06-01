@@ -67,7 +67,7 @@ Next you want to attach an event to the MIDI "onMIDIMessage" event that you get 
 
 <div class="codeBlockHeader">
   
-   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/midi2/midi2.js">
+   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/midi/midi2.js">
   </copy-button>
   
 </div>
