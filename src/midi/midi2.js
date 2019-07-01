@@ -10,7 +10,7 @@ for (var input of midiAccess.inputs.values())
 
 function getMIDIMessage(midiMessage) {
 console.log(midiMessage.data[1]);
-document.GetElementById('midiValue').innerHTML = midiMessage.data[1];
+document.getElementById('midiValue').innerHTML = midiMessage.data[1];
 }
 
 function onFailure() {
