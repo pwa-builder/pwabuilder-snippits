@@ -25,42 +25,12 @@ Add this code to your HTML page:
 </div>
 
 <div class="codeBlock">
- 
-```html
-<button onclick="copyToClipboard('Text im copying')">
-  Copy To Clipboard
-</button>
-```
+<pwb-clipboard texttocopy="Hello World"></pwb-clipboard> 
 
 </div>
 
  
-### Step 2
 
-Include the following script in your website
-
-<div class="codeBlockHeader">
-  
-   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/clipboard/clipboard.js">
-  </copy-button>
-  
-</div>
-
-<div class="codeBlock">
-  
-```javascript
-async function copyToClipboard(stringToCopy) {
-  if (navigator.clipboard) {
-    try {
-      await navigator.clipboard.writeText(stringToCopy);
-      console.log('string copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy: ', err);
-    }
-  }
-}
-```
-</div>
 
 
 </div>
