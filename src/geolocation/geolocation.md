@@ -26,43 +26,7 @@ Add this code to your HTML page:
 
 <div class="codeBlock">
  
-```html
-<button onclick="getLocation()">
-  Get Location
-</button>
-```
+<pwb-geolocation></pwb-geolocation>
 
 </div>
-
- 
-### Step 2
-
-Include the following script in your website
-
-<div class="codeBlockHeader">
-  
-   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/geolocation/geolocation.js">
-  </copy-button>
-  
-</div>
-
-<div class="codeBlock">
-  
-```javascript
-function getLocation() {
-  if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition((position) => {
-      console.log(position.coords);
-
-      return position;
-    })
-  }
-  else {
-    console.info("geolocation is not supported in this environment");
-  }
-}
-```
-</div>
-
-
 </div>
