@@ -19,11 +19,12 @@ A simple script that uses the [Gelocation API](https://developer.mozilla.org/en-
 
 Add this code to your HTML page: 
 
+```html
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/geolocation/geolocation.html">
   </copy-button>
 </div>
-
+```
 <div class="codeBlock">
  
 <pwb-geolocation></pwb-geolocation>

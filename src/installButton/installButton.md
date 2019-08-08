@@ -26,9 +26,10 @@ Add this code to your HTML page:
 
 <div class="codeBlock">
  
+```html
 <pwb-install iconpath="https://webboard-app.web.app/assets/icon/256.png"
     manifestpath="/test-manifest.webmanifest" forceshow="true"></pwb-install>
-
+```
 </div>
 
 

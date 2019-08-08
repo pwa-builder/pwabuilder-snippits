@@ -19,11 +19,12 @@ A simple script that uses the [Web Share API](https://developers.google.com/web/
 
 Add this code to your HTML page: 
 
+```html
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/share/share.html">
   </copy-button>
 </div>
-
+```
 <div class="codeBlock">
  
 <pwb-share title="share title" text="share text" url="https://microsoft.com"></pwb-share>
