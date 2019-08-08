@@ -26,61 +26,11 @@ Add this code to your HTML page:
 
 <div class="codeBlock">
  
-```html
-<button onclick="install()">
-  Install
-</button>
-```
+<pwb-install iconpath="https://webboard-app.web.app/assets/icon/256.png"
+    manifestpath="/test-manifest.webmanifest" forceshow="true"></pwb-install>
 
-</div>
-
- 
-### Step 2
-
-Include the following script in your website
-
-<div class="codeBlockHeader">
-  
-   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/installButton/installButton.js">
-  </copy-button>
-  
-</div>
-
-<div class="codeBlock">
-  
-```javascript
-
-    let deferredPrompt = null;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-});
-
-async function install() {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    console.log(deferredPrompt)
-    deferredPrompt.userChoice.then(function(choiceResult){
-
-      if (choiceResult.outcome === 'accepted') {
-      console.log('Your PWA has been installed');
-    } else {
-      console.log('User chose to not install your PWA');
-    }
-
-    deferredPrompt = null;
-
-    });
-
- 
-  }
-}
-
-```
 </div>
 
 
 </div>
+
