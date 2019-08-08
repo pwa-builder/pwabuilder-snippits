@@ -18,14 +18,17 @@ A simple script that uses the [Clipboard API](https://developer.mozilla.org/en-U
 ### Step 1
 
 Add this code to your HTML page: 
-```html
+
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/clipboard/clipboard.html">
   </copy-button>
 </div>
-```
+
 <div class="codeBlock">
+
+```html
 <pwb-clipboard texttocopy="Hello World"></pwb-clipboard> 
+```
 
 </div>
 

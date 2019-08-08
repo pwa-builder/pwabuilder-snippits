@@ -8,7 +8,7 @@
 <div id="leftSide">
   
 ### Description
-A simple script that uses the [Web Share API](https://developers.google.com/web/updates/2016/09/navigator-share) to allow your app to share content on the web. This snippit will use the WinRT share API in PWAs installed from the Microsoft Store.
+A simple component that uses the [Web Share API](https://developers.google.com/web/updates/2016/09/navigator-share) to allow your app to share content on the web. This snippit will use the WinRT share API in PWAs installed from the Microsoft Store.
 
 
 </div>
@@ -19,15 +19,16 @@ A simple script that uses the [Web Share API](https://developers.google.com/web/
 
 Add this code to your HTML page: 
 
-```html
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/share/share.html">
   </copy-button>
 </div>
-```
+
 <div class="codeBlock">
  
+ ```html
 <pwb-share title="share title" text="share text" url="https://microsoft.com"></pwb-share>
+```
 
 </div>
 

@@ -8,7 +8,7 @@
 <div id="leftSide">
   
 ### Description
-A simple script that uses the [Gelocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to allow your app to ask for the users current location.
+A simple component that uses the [Gelocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to allow your app to ask for the users current location.
 
 
 </div>
@@ -19,15 +19,16 @@ A simple script that uses the [Gelocation API](https://developer.mozilla.org/en-
 
 Add this code to your HTML page: 
 
-```html
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/geolocation/geolocation.html">
   </copy-button>
 </div>
-```
+
 <div class="codeBlock">
- 
+
+```html
 <pwb-geolocation></pwb-geolocation>
+```
 
 </div>
 </div>

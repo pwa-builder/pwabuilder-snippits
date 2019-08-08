@@ -8,7 +8,7 @@
 <div id="leftSide">
   
 ### Description
-A simple script that gives users a button to install your PWA directly from the browser
+A simple component that gives users a button to install your PWA directly from the browser
 
 
 </div>
