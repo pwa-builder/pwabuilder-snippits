@@ -33,7 +33,7 @@ Add this code to your HTML page:
 <div class="codeBlock">
  
 ```html
-<mgt-tasks data-source="todo"></mgt-tasks>
+<mgt-tasks data-source="planner"></mgt-tasks>
 ```
 
 </div>
