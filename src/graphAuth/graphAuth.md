@@ -20,7 +20,7 @@ You need to get a "client ID" to set up Auth on your website. To get a client ID
 
 <div id="rightSide">
 
-### Step 1
+### MSAL Authentication
 
 Add this code to your HTML page: 
 
@@ -32,11 +32,28 @@ Add this code to your HTML page:
 <div class="codeBlock">
  
 ```html
+<mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 <mgt-login></mgt-login>
 ```
 
 </div>
 
+
+### Teams Authentication
+
+Add this code to your HTML page: 
+
+<div class="codeBlockHeader">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html">
+  </copy-button>
+</div>
+
+<div class="codeBlock">
+ 
+```html
+<mgt-teams-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="https://<YOUR-DOMAIN>.com/AUTH-PATH" ></mgt-teams-provider>
+<mgt-login></mgt-login>
+```
 
 </div>
 
