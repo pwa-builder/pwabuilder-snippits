@@ -26,63 +26,7 @@ Add this code to your HTML page:
 
 <div class="codeBlock">
  
-```html
-<button onclick="share('title', 'https://www.xbox.com/en-US/xbox-one-x', 'Check out the new Xbox!')">
-  Share
-</button>
-```
+<pwb-share title="share title" text="share text" url="https://microsoft.com"></pwb-share>
 
 </div>
-
- 
-### Step 2
-
-include the following script on your website and *don't forget to update the Cleint ID with the ID from [apps.dev.microsoft.com](https://apps.dev.microsoft.com)*.  You will also need to configure your callback URL while there.
-
-<div class="codeBlockHeader">
-  
-   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/share/share.js">
-  </copy-button>
-  
-</div>
-
-<div class="codeBlock">
-  
-```javascript
-async function share(title, text, url) {
-  if (window.Windows) {
-    const DataTransferManager = window.Windows.ApplicationModel.DataTransfer.DataTransferManager;
-
-    const dataTransferManager = DataTransferManager.getForCurrentView();
-    dataTransferManager.addEventListener("datarequested", (ev) => {
-      const data = ev.request.data;
-
-      data.properties.title = title;
-      data.properties.url = url;
-      data.setText(text);
-    });
-
-    DataTransferManager.showShareUI();
-
-    return true;
-  } else if (navigator.share) {
-    try {
-      await navigator.share({
-        title: title,
-        text: text,
-        url: url,
-      });
-
-      return true;
-    } catch (err) {
-      console.error('There was an error trying to share this content');
-      return false;
-    }
-  }
-}
-
-```
-</div>
-
-
 </div>
