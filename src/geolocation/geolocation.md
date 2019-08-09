@@ -27,6 +27,7 @@ Add this code to your HTML page:
 <div class="codeBlock">
 
 ```html
+<script src="https://unpkg.com/pwabuilder-components@latest"></script>
 <pwb-geolocation></pwb-geolocation>
 ```
 

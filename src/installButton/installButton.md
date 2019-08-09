@@ -27,8 +27,9 @@ Add this code to your HTML page:
 <div class="codeBlock">
  
 ```html
+<script src="https://unpkg.com/pwabuilder-components@latest"></script>
 <pwb-install iconpath="https://webboard-app.web.app/assets/icon/256.png"
-    manifestpath="/test-manifest.webmanifest" forceshow="true"></pwb-install>
+    manifestpath="/manifest.webmanifest" forceshow="true"></pwb-install>
 ```
 </div>
 

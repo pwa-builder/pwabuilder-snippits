@@ -28,6 +28,7 @@ Add this code to your HTML page:
 <div class="codeBlock">
  
  ```html
+<script src="https://unpkg.com/pwabuilder-components@latest"></script>
 <pwb-share title="share title" text="share text" url="https://microsoft.com"></pwb-share>
 ```
 
