@@ -20,7 +20,7 @@ A simple component that gives users a button to install your PWA directly from t
 Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/installButton/installButton.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/installButton/installButton.html">
   </copy-button>
 </div>
 
