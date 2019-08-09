@@ -20,7 +20,7 @@ Add this code to your HTML page:
 
 <div class="codeBlockHeader">
   
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphContacts/graphContacts.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/graphContacts/graphContacts.html">
   </copy-button>
   
 </div>

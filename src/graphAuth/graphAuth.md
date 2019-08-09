@@ -25,7 +25,7 @@ You need to get a "client ID" to set up Auth on your website. To get a client ID
 Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/graphAuth/graphAuth.html">
   </copy-button>
 </div>
 
