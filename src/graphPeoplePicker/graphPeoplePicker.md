@@ -24,7 +24,7 @@ You will also need to use the [Microsoft Graph Auth feature](https://pwabuilder-
 Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/graphPeoplePicker/graphPeoplePicker.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/graphPeoplePicker/graphPeoplePicker.html">
   </copy-button>
 </div>
 
