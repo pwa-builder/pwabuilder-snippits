@@ -10,6 +10,7 @@
 ### Description
 A simple component that uses the [Web Share API](https://developers.google.com/web/updates/2016/09/navigator-share) to allow your app to share content on the web. This snippit will use the WinRT share API in PWAs installed from the Microsoft Store.
 
+![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/share/share.PNG)
 
 </div>
 

@@ -10,7 +10,7 @@
 ### Description
 A simple component that uses the [Gelocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to allow your app to ask for the users current location.
 
-
+![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/geolocation/geolocation.PNG)
 </div>
 
 <div id="rightSide">
