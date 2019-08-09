@@ -33,6 +33,8 @@ Add this code to your HTML page:
 <div class="codeBlock">
  
 ```html
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+
 <mgt-tasks data-source="planner"></mgt-tasks>
 ```
 

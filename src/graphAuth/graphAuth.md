@@ -32,6 +32,8 @@ Add this code to your HTML page:
 <div class="codeBlock">
  
 ```html
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 <mgt-login></mgt-login>
 ```
@@ -51,6 +53,8 @@ Add this code to your HTML page:
 <div class="codeBlock">
  
 ```html
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+
 <mgt-teams-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="https://<YOUR-DOMAIN>.com/AUTH-PATH" ></mgt-teams-provider>
 <mgt-login></mgt-login>
 ```
