@@ -12,7 +12,7 @@
 The person component is used to display a person or contact by using their photo, name, and/or email address.
 
 ### Prerequisite
-You will also need to use the [Microsoft Graph Auth feature](https://pwabuilder-site-dev.azurewebsites.net/feature/Microsoft%20Graph%20Authentication) in the same app to ensure there is an authenticated user. If you are already using the `mgt-login` componenent in your app then you can use this feature.
+You will also need to use a [Microsoft Graph Toolkit provider](https://docs.microsoft.com/en-us/graph/toolkit/providers/msal) in the same app to ensure there is an authenticated user. If you are already using the `mgt-msal-provider` in your app then you can use this feature.
 
 
 </div>
