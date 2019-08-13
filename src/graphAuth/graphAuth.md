@@ -13,9 +13,6 @@ A simple script to authenticate your users with a Microsoft account or Active Di
 ### Prerequisite
 You need to get a "client ID" to set up Auth on your website. To get a client ID tap the `generate Client ID button`. If you already have a client ID, retrieve it from: [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList).
 
-### Documentation
-[Click here](https://docs.microsoft.com/en-us/graph/toolkit/components/login) to learn more.
-
 ![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graph.JPG)
 
 

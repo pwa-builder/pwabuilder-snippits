@@ -14,9 +14,6 @@ The person component is used to display a person or contact by using their photo
 ### Prerequisite
 You will also need to use a [Microsoft Graph Toolkit provider](https://docs.microsoft.com/en-us/graph/toolkit/providers/msal) in the same app to ensure there is an authenticated user. If you are already using the `mgt-msal-provider` in your app then you can use this feature.
 
-### Documentation
-[Click here](https://docs.microsoft.com/en-us/graph/toolkit/components/person) to learn more.
-
 
 </div>
 
