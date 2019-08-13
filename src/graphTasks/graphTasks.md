@@ -24,7 +24,7 @@ You will also need to use a [Microsoft Graph Toolkit provider](https://docs.micr
 Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/demo/graphTasks/graphTasks.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/src/demo/graphTasks/graphTasks.html">
   </copy-button>
 </div>
 

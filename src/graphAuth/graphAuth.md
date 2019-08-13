@@ -46,7 +46,7 @@ Add this code to your HTML page:
 Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graphAuth.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/graphAuth/graphAuth.html">
   </copy-button>
 </div>
 

@@ -20,7 +20,7 @@ A simple script that uses the [Clipboard API](https://developer.mozilla.org/en-U
 Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/clipboard/clipboard.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/clipboard/clipboard.html">
   </copy-button>
 </div>
 
