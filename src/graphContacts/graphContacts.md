@@ -16,7 +16,7 @@ You will also need to use a [Microsoft Graph Toolkit provider](https://docs.micr
 ### Documentation
 [Click here](https://docs.microsoft.com/en-us/graph/toolkit/components/people) to learn more.
 
-![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphContacts/graphContacts.png)
+![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/graphContacts/graphContacts.png)
 
 
 </div>

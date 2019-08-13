@@ -16,7 +16,7 @@ You will also need to use a [Microsoft Graph Toolkit provider](https://docs.micr
 ### Documentation
 [Click here](https://docs.microsoft.com/en-us/graph/toolkit/components/agenda) to learn more.
 
-![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphCalendar/graphCalendar.png)
+![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/graphCalendar/graphCalendar.png)
 
 
 </div>
@@ -29,7 +29,7 @@ Add this code to your HTML page:
 
 <div class="codeBlockHeader">
   
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphCalendar/graphCalendar.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/graphCalendar/graphCalendar.html">
   </copy-button>
   
 </div>
