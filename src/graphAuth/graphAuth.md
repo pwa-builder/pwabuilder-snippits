@@ -11,7 +11,9 @@
 A simple script to authenticate your users with a Microsoft account or Active Directory account to get access to the graph.
 
 ### Prerequisite
-You need to get a "client ID" to set up Auth on your website. To get a client ID visit [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and login with your [Microsoft Account](https://login.live.com/). If you already have a client ID, retrieve it from: [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList).
+1. Navigate to the [Azure portal – App registrations](https://go.microsoft.com/fwlink/?linkid=2083908) page to register your application. Sign in to the Azure portal using either a work or school account or a personal Microsoft account. 
+
+2. Select **New registration**.  If you already have a client ID, retrieve it from: [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList).
 
 ![graph login](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/graphAuth/graph.JPG)
 
