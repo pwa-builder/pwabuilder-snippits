@@ -14,6 +14,8 @@ The People Picker component enables the user to view, add, or remove people obje
 ### Prerequisite
 You will also need to use a [Microsoft Graph Toolkit provider](https://docs.microsoft.com/en-us/graph/toolkit/providers/msal) in the same app to ensure there is an authenticated user. If you are already using the `mgt-msal-provider` in your app then you can use this feature.
 
+![graph people picker](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/graphPeoplePicker/graphPeoplePicker.png)
+
 
 </div>
 
