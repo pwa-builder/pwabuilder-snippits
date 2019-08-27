@@ -16,7 +16,7 @@ Once you have completed that configuration, you will have a subdomain and will b
 
 Learn more at [https://azure.microsoft.com/en-us/services/cognitive-services/immersive-reader/](https://azure.microsoft.com/en-us/services/cognitive-services/immersive-reader/)
 
-![immersive reader example imamge](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/master/src/immersiveReader/ir.png)
+![immersive reader example imamge](https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/immersiveReader/ir.png)
 
 
 </div>
