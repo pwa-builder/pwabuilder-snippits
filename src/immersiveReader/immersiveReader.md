@@ -16,7 +16,7 @@ Once you have completed that configuration, you will have a subdomain and will b
 
 Learn more at [https://azure.microsoft.com/en-us/services/cognitive-services/immersive-reader/](https://azure.microsoft.com/en-us/services/cognitive-services/immersive-reader/)
 
-
+![immersive reader example iamge](ir.png)
 
 
 </div>
@@ -25,6 +25,9 @@ Learn more at [https://azure.microsoft.com/en-us/services/cognitive-services/imm
 
 ### Step 1
 
+Acquire an Azure [Immersive reader endpoint](https://docs.microsoft.com/en-us/azure/cognitive-services/immersive-reader/azure-active-directory-authentication) and private key. and add them to your component below.
+
+### Step 2
 Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
