@@ -46,7 +46,7 @@ Add this code to your HTML page:
   </div>
 </pwb-immersiveReader>
 
-<div class='immersive-reader-button'>Read with Immersive Reader</div>
+<div class="immersive-reader-button">Read with Immersive Reader</div>
 
 ```
 
