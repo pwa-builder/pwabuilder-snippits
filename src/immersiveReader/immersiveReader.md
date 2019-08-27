@@ -16,7 +16,7 @@ Once you have completed that configuration, you will have a subdomain and will b
 
 Learn more at [https://azure.microsoft.com/en-us/services/cognitive-services/immersive-reader/](https://azure.microsoft.com/en-us/services/cognitive-services/immersive-reader/)
 
-![immersive reader example iamge](ir.png)
+![immersive reader example iamge](https://github.com/pwa-builder/pwabuilder-snippits/blob/demo/src/immersiveReader/ir.png)
 
 
 </div>
@@ -38,14 +38,16 @@ Add this code to your HTML page:
 <div class="codeBlock">
 
 ```html
+
 <script src="https://unpkg.com/pwabuilder-components@latest"></script>
 <pwb-immersiveReader irName="SAMPLENAME" irToken="SAMPLETOKEN">
   <div>
-    Learning Tools Immersive Reader creates a readingexperience that adds accessibility and comprehension forlearners of all ages and abilities. The menu in the upperright corner of this screen allows you to change theappearance of your reading material or hear your text readout loud.
+   Add any text or HTML inside this tag to have it presented in the imersive reader
   </div>
 </pwb-immersiveReader>
 
-<div class='immersive-reader-button' onclick='launchImmersiveReader()'>Read with Immersive Reader</div>
+<div class='immersive-reader-button'>Read with Immersive Reader</div>
+
 ```
 
 </div>
