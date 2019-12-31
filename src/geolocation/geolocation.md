@@ -1,6 +1,6 @@
 <div id="headerDiv">
 
-## Ask for the users location using the Gelocation API
+## Ask for the users location using the Geolocation API
 
 </div>
 
@@ -8,7 +8,7 @@
 <div id="leftSide">
   
 ### Description
-A simple script that uses the [Gelocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to allow your app to ask for the users current location.
+A simple script that uses the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to allow your app to ask for the users current location.
 
 
 </div>
