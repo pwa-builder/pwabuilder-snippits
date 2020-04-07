@@ -16,7 +16,9 @@
 
 ![pwa-auth buttons](https://github.com/pwa-builder/pwa-auth/raw/master/assets/install-btn-dropdown.png)
 
+<div class="embed-responsive">
 <iframe loading="lazy" src="https://pwa-auth-basic.glitch.me"></iframe>
+</div>
 
 Try it: [live](https://pwa-auth-basic.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-basic)
 
