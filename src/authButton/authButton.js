@@ -7,7 +7,7 @@ pwaAuth.addEventListener("signin-completed", ev => {
         console.log("Email: ", signIn.email);
         console.log("Name: ", signIn.name);
         console.log("Picture: ", signIn.imageUrl);
-        console.log("Provider: ", signIn.provider); // "Facebook"
+        console.log("Provider (MS, Google, FB): ", signIn.provider);
         console.log("Raw data from provider: ", signIn.providerData);
     }
 });
