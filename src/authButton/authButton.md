@@ -14,7 +14,7 @@
 
 😎😎 Double bonus: It uses the new [Credential Management APIs](https://developers.google.com/web/fundamentals/security/credential-management/retrieve-credentials) to speed through sign-ins without bulky pop-ups or redirects.
 
-<img src="https://github.com/pwa-builder/pwa-auth/raw/master/assets/install-btn-dropdown.png" style="width: auto;" />
+![pwa-auth buttons](https://github.com/pwa-builder/pwa-auth/raw/master/assets/install-btn-dropdown.png)
 
 Alternately, `pwa-auth` can be displayed as a list of buttons:
 
@@ -49,7 +49,6 @@ You can also change the appearance and behavior of `pwa-auth`.
 
 <div class="codeBlock">
 
-Import the script in your page &lt;head&gt;:
 ```html
 <script
   type="module"
@@ -67,13 +66,24 @@ Import the script in your page &lt;head&gt;:
 </div>
 
 ### Step 2: Create key(s)
-You'll need to create one or more keys to let your users login.
+
+You'll need to create one or more keys to let your users login. Creating a key takes about 2 minutes.
 
 - [Create a Microsoft key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-microsoft-key.md)
 - [Create a Google key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-google-key.md)
 - [Create a Facebook key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-facebook-key.md)
 
+
 ### Step 3: Listen for `signin-completed` event
+
+Final step is listen for the `signin-completed` event to know when a user signs-in. You'll receive the user's name, email, and profile picture URL.
+
+testing Gists
+
+<script src="https://gist.github.com/JudahGabriel/6f2f8ddf3047f642de55d4cae7901bc1.js"></script>
+
+done test
+
 
 ```javascript
 const pwaAuth = document.querySelector("pwa-auth");
