@@ -14,7 +14,7 @@
 
 😎😎 Double bonus: It uses the new [Credential Management APIs](https://developers.google.com/web/fundamentals/security/credential-management/retrieve-credentials) to speed through sign-ins without bulky pop-ups or redirects.
 
-![pwa auth](https://github.com/pwa-builder/pwa-auth/raw/master/assets/install-btn-dropdown.png)
+<img src="https://github.com/pwa-builder/pwa-auth/raw/master/assets/install-btn-dropdown.png" style="width: auto;" />
 
 Alternately, `pwa-auth` can be displayed as a list of buttons:
 
