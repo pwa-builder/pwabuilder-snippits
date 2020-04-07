@@ -16,6 +16,8 @@
 
 ![pwa-auth buttons](https://github.com/pwa-builder/pwa-auth/raw/master/assets/install-btn-dropdown.png)
 
+<iframe loading="lazy" src="https://pwa-auth-basic.glitch.me"></iframe>
+
 Try it: [live](https://pwa-auth-basic.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-basic)
 
 Alternately, `pwa-auth` can be displayed as a list of buttons:
@@ -267,9 +269,7 @@ You can style the different parts of pwa-auth using [CSS ::part selectors](https
 | `facebookIcon` | The icon for the `Sign in with Facebook` button. |
 | `dropdownMenu` | The dropdown menu of the `Sign In` button displayed when `appearance="button"` |
 
-
 ### Styling samples
-
 
 Jazz up the Sign In button:
 
@@ -298,7 +298,6 @@ Try it: [live](https://pwa-auth-customize.glitch.me/) | [code](https://glitch.co
 
 ### Step 1: Add `pwa-auth` to your page
 
-
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/authButton/authButton.html"></copy-button>
 </div>
@@ -326,7 +325,6 @@ You'll need to create one or more keys to let your users login. Creating a key t
 - [Create a Microsoft key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-microsoft-key.md)
 - [Create a Google key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-google-key.md)
 - [Create a Facebook key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-facebook-key.md)
-
 
 ### Step 3: Listen for `signin-completed` event
 
