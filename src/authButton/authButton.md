@@ -14,11 +14,13 @@
 
 😎😎 Double bonus: It uses the new [Credential Management APIs](https://developers.google.com/web/fundamentals/security/credential-management/retrieve-credentials) to speed through sign-ins without bulky pop-ups or redirects.
 
-<div class="embed-responsive">
-<iframe loading="lazy" src="https://pwa-auth-basic.glitch.me" height="700px"></iframe>
-</div>
+<hr>
 
 Try it: [live](https://pwa-auth-basic.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-basic)
+
+<div class="embed-responsive" height="700px">
+<iframe loading="lazy" src="https://pwa-auth-basic.glitch.me"></iframe>
+</div>
 
 Alternately, `pwa-auth` can be displayed as a list of buttons:
 
