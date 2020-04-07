@@ -14,6 +14,8 @@
 
 😎😎 Double bonus: It uses the new [Credential Management APIs](https://developers.google.com/web/fundamentals/security/credential-management/retrieve-credentials) to speed through sign-ins without bulky pop-ups or redirects.
 
+![pwa-auth buttons](https://github.com/pwa-builder/pwa-auth/raw/master/assets/install-btn-dropdown.png)
+
 <div class="embed-responsive">
 <iframe loading="lazy" src="https://pwa-auth-basic.glitch.me"></iframe>
 </div>
