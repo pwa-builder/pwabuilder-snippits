@@ -279,10 +279,10 @@ You can customize the appearance and behavior of pwa-auth component.
 | `signIn(provider: string)` | `provider`: `'Microsoft' \| 'Google' \| 'Facebook'` | Kicks off the sign-in process. If the user hasn't previously authenticated, he'll be prompted to sign-in via OAuth flow. If the user saved a previous credential, it will be used to sign-in quickly without the need for OAuth flow. |
 
 
-## Styling
+### Styling
 
 
-### Shadow parts
+#### Shadow parts
 
 
 You can style the different parts of pwa-auth using [CSS ::part selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/::part). Below are the list of parts available for styling:
@@ -298,7 +298,7 @@ You can style the different parts of pwa-auth using [CSS ::part selectors](https
 | `facebookIcon` | The icon for the `Sign in with Facebook` button. |
 | `dropdownMenu` | The dropdown menu of the `Sign In` button displayed when `appearance="button"` |
 
-### Styling samples
+#### Styling samples
 
 Jazz up the Sign In button:
 
