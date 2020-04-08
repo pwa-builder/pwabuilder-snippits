@@ -7,23 +7,20 @@
 <div id="contentContainer">
 <div id="leftSide">
   
-### Description
+### Overview
 `pwa-auth` is a modern web component that lets your users sign-in/sign-up using their Microsoft, Google, or Facebook account. Your app receives their email address, name, and profile picture. [Built](https://github.com/pwa-builder/pwa-auth) with ❤ by the PWABuilder team.
 
 😎 Bonus: It's super lightweight, pulling in the authentication libraries only when the user tries to sign-in with one.
 
 😎😎 Double bonus: It uses the new [Credential Management APIs](https://developers.google.com/web/fundamentals/security/credential-management/retrieve-credentials) to speed through sign-ins without bulky pop-ups or redirects.
 
-<hr>
+### Using `pwa-auth`
 
-Try it: [live](https://pwa-auth-basic.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-basic)
-
-<!-- <div class="embed-responsive" height="700px">
-<iframe loading="lazy" src="https://pwa-auth-basic.glitch.me"></iframe>
-</div> -->
+By default, `pwa-auth` displays as a `Sign In` dropdown button:
 
 <div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
   <iframe
+    loading="lazy"
     allow="geolocation; microphone; camera; midi; encrypted-media"
     src="https://glitch.com/embed/#!/embed/pwa-auth-basic?previewSize=100&previewFirst=true&sidebarCollapsed=true"
     alt="pwa-auth-basic on Glitch"
@@ -31,7 +28,9 @@ Try it: [live](https://pwa-auth-basic.glitch.me/) | [code](https://glitch.com/ed
   </iframe>
 </div>
 
-Alternately, `pwa-auth` can be displayed as a list of buttons:
+#### List of provider buttons
+
+Alternately, `pwa-auth` can be displayed as a list of sign-in provider buttons:
 
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/authButton/list.html">
@@ -46,9 +45,17 @@ Alternately, `pwa-auth` can be displayed as a list of buttons:
 
 </div>
 
-![pwa-auth buttons](https://github.com/pwa-builder/pwa-auth/raw/master/assets/list.png)
+<div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
+  <iframe
+    loading="lazy"
+    allow="geolocation; microphone; camera; midi; encrypted-media"
+    src="https://glitch.com/embed/#!/embed/pwa-auth-list?previewSize=100&previewFirst=true&sidebarCollapsed=true"
+    alt="pwa-auth-list on Glitch"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
 
-Try it: [live](https://pwa-auth-list.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-list)
+#### Headless
 
 Finally, `pwa-auth` can be headless; bring your own UI:
 
@@ -70,9 +77,17 @@ myOwnSignInBtn.addEventHandler("click", () => pwaAuth.signIn("Microsoft")); // O
 
 </div>
 
-Try it: [live](https://pwa-auth-headless.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-headless)
+<div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
+  <iframe
+    loading="lazy"
+    allow="geolocation; microphone; camera; midi; encrypted-media"
+    src="https://glitch.com/embed/#!/embed/pwa-auth-headless?previewSize=100&previewFirst=true&sidebarCollapsed=true"
+    alt="pwa-auth-headless on Glitch"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
 
-## What happens when a user signs in?
+### What happens when a user signs in?
 
 You'll get a `signin-completed` event containing the user's `email`, `name`, and `imageUrl`, as well as additional raw data from the provider (e.g. authentication token):
 
@@ -123,7 +138,7 @@ pwaAuth.addEventListener("signin-completed", ev => {
 
 </div>
 
-## What does the user see?
+### What does the user see?
 
 The <em>first time</eM> a user signs in, he'll see the familiar OAuth flow asking the user to sign-in. For example, signing in with Google looks like this:
 
@@ -137,7 +152,7 @@ When the user signs in successfully the first time, the browser asks to save you
 
 If the user saves his credentials, it will be stored using the new [Credential Management API](https://developers.google.com/web/fundamentals/security/credential-management/retrieve-credentials), enabling fast successive sign-ins.
 
-## Successive sign-ins
+### Successive sign-ins
 #### (Or, [Credential Management](https://developers.google.com/web/fundamentals/security/credential-management/retrieve-credentials) FTW)
 
 If a user has signed-in previously, future sign-ins will be instantaneous. 😎 The next time the user taps `Sign In`, he'll have a streamlined experience without needing any OAuth prompts or pop-ups:
@@ -155,11 +170,17 @@ If a user has signed-in previously, future sign-ins will be instantaneous. 😎 
 
 </div>
 
-<img loading="lazy" src="https://raw.githubusercontent.com/pwa-builder/pwa-auth/master/assets/first-cred.png" />
+<div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
+  <iframe
+    loading="lazy"
+    allow="geolocation; microphone; camera; midi; encrypted-media"
+    src="https://glitch.com/embed/#!/embed/pwa-auth-silent?previewSize=100&previewFirst=true&sidebarCollapsed=true"
+    alt="pwa-auth-silent on Glitch"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
 
-Try it: [live](https://pwa-auth-silent.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-silent?path=index.html:33:1)
-
-In the above screenshot, the user tapped Sign In, and was automatically signed-in using the first saved credential; no OAuth dialogs, pop-ups, or redirects needed! 😎 The browser typically displays a "Signing in as..." info bar during this process.
+In the above sample, the user tapped Sign In and was automatically signed-in using the first saved credential; no OAuth dialogs, pop-ups, or redirects needed! 😎 The browser typically displays a "Signing in as..." info bar during this process.
 
 As an alternative, you can have the browser <em>prompt</em> the user to confirm his sign-in:
 
@@ -176,11 +197,17 @@ As an alternative, you can have the browser <em>prompt</em> the user to confirm 
 
 </div>
 
-<img loading="lazy" src="https://raw.githubusercontent.com/pwa-builder/pwa-auth/master/assets/signin-prompt.png" />
+<div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
+  <iframe
+    loading="lazy"
+    allow="geolocation; microphone; camera; midi; encrypted-media"
+    src="https://glitch.com/embed/#!/embed/pwa-auth-prompt?previewSize=100&previewFirst=true&sidebarCollapsed=true"
+    alt="pwa-auth-prompt on Glitch"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
 
-Try it: [live](https://pwa-auth-prompt.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-prompt?path=index.html:33:1)
-
-In the above image, the user tapped the gray `Sign In` button, and then was prompted by the browser to sign in using his stored credential.
+In the above sample, the user taps `Sign In` and  the browser prompts him to sign-in using his stored credential.
 
 If the user had previously signed-in with multiple accounts (e.g. once with Google, once with Microsoft), he'll be given a choice of which provider to sign-in with:
 
@@ -299,9 +326,15 @@ pwa-auth::part(signInButton) {
 
 </div>
 
-<img loading="lazy" src="https://raw.githubusercontent.com/pwa-builder/pwa-auth/master/assets/signin-part.png">
-
-Try it: [live](https://pwa-auth-customize.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-customize?path=style.css:18:1)
+<div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
+  <iframe
+    loading="lazy"
+    allow="geolocation; microphone; camera; midi; encrypted-media"
+    src="https://glitch.com/embed/#!/embed/pwa-auth-customize?previewSize=100&previewFirst=true&sidebarCollapsed=true"
+    alt="pwa-auth-customize on Glitch"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
 
 </div>
 
