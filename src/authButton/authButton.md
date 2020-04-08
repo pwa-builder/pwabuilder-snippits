@@ -94,8 +94,6 @@ Finally, `pwa-auth` can be headless; bring your own UI:
 
 You'll get a `signin-completed` event containing the user's `email`, `name`, and `imageUrl`, as well as additional raw data from the provider (e.g. authentication token):
 
-<script src="https://gist.github.com/JudahGabriel/6f2f8ddf3047f642de55d4cae7901bc1.js"></script>
-
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/authButton/signInCompleted.js">
   </copy-button>
