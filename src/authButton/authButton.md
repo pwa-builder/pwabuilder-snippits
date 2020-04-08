@@ -249,11 +249,11 @@ You can customize the appearance and behavior of pwa-auth component.
 ### Properties
 | Property             | Attribute            | Description                                                                     | Type      | Default |
 | - | - | - | - | - |
-| `appearance` | `appearance` | Whether to render a single `Sign In` dropdown button or a list of sign-in provider buttons. See [what does it look like?](#what-does-it-look-like) for details. | `'button'\|'list'\|'none'` | `'button'` |
-| `credentialMode` | `credentialmode` | What happens when you click the `Sign In` button. If the user has previously signed-in and saved his credential, you can speed the user through sign-in: <ul><li>`silent`: When clicking `Sign In`, silently sign-in using his saved credential if available.</li><li>`prompt`: When clicking `Sign In`, prompt the user to sign-in with his saved crendential if available.</li><li>`none`: When clicking `Sign In`, show the dropdown menu with list of sign-in providers</li></ul> See [successive sign-ins](#successive-sign-ins) for details. | `'silent'\|'prompt'\|'none'` | `'silent'` |
-| `microsoftKey` | `microsoftkey`  | The `Application (client) ID` of the Microsoft App you created. See [creating a Microsoft key](/creating-microsoft-key.md). header | `string \| null` | `null` |
-| `googleKey` | `googlekey`  | The `Client ID` of the Google credential you created. See [creating a Google key](/creating-google-key.md) | `string \| null` | `null` |
-| `facebookKey` | `facebookkey`  | The `App ID` of the Facebook App you created. See [creating a Facebook key](/creating-facebook-key.md) | `string \| null`  | `null` |
+| `appearance` | `appearance` | Whether to render a single `Sign In` dropdown button or a list of sign-in provider buttons. | `'button' \| 'list' \| 'none'` | `'button'` |
+| `credentialMode` | `credentialmode` | What happens when you click the `Sign In` button. If the user has previously signed-in and saved his credential, you can speed the user through sign-in: <ul><li>`silent`: When clicking `Sign In`, silently sign-in using his saved credential if available.</li><li>`prompt`: When clicking `Sign In`, prompt the user to sign-in with his saved crendential if available.</li><li>`none`: When clicking `Sign In`, show the dropdown menu with list of sign-in providers</li></ul> | `'silent' \| 'prompt' \| 'none'` | `'silent'` |
+| `microsoftKey` | `microsoftkey`  | The `Application (client) ID` of the Microsoft App you created. See [creating a Microsoft key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-microsoft-key.md). header | `string \| null` | `null` |
+| `googleKey` | `googlekey`  | The `Client ID` of the Google credential you created. See [creating a Google key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-google-key.md) | `string \| null` | `null` |
+| `facebookKey` | `facebookkey`  | The `App ID` of the Facebook App you created. See [creating a Facebook key](https://github.com/pwa-builder/pwa-auth/blob/master/creating-facebook-key.md) | `string \| null`  | `null` |
 | `signInButtonText` | `signinbuttontext` | The text of the `Sign In` button, displayed when `appearance="button"` | `string` | 'Sign in' |
 | `microsoftButtonText` | `microsoftbuttontext` | The label for the `Sign in with Microsoft` button | `string`  | 'Sign in with Microsoft' |
 | `googleButtonText` | `googlebuttontext` | The label for the `Sign in with Google` button | `string`  | 'Sign in with Google' |
@@ -268,7 +268,7 @@ You can customize the appearance and behavior of pwa-auth component.
 
 | Name | Type | Event Data | Description | 
 | - | - | - | - | 
-| `signin-completed` | `CustomEvent` | `e.detail` will contain the details of the sign-in event.<br><ul><li>`e.detail.email`: The email address of the signed-in user.</li><li>`e.detail.name`: The name of the signed-in user.</li><li>`e.detail.imageUrl`: URL of the user's profile picture. May be null in some scenarios.</li><li>`e.detail.provider`: The name of the provider the user signed-in with.</li><li>`e.detail.error`: The error that occurred during sign-in. Will be null if sign-in was successful.</li><li>`e.detail.providerData`: The raw sign-in data received from an OAuth flow sign-in. Maybe be null during successive sign-ins.</li></ul> | Fired when a sign-in completes successfully or unsuccessfully. If the sign-in failed, `e.detail.error` will be non-null. <br><br>[View code sample](#what-happens-when-a-user-signs-in).
+| `signin-completed` | `CustomEvent` | `e.detail` will contain the details of the sign-in event.<br><ul><li>`e.detail.email`: The email address of the signed-in user.</li><li>`e.detail.name`: The name of the signed-in user.</li><li>`e.detail.imageUrl`: URL of the user's profile picture. May be null in some scenarios.</li><li>`e.detail.provider`: The name of the provider the user signed-in with.</li><li>`e.detail.error`: The error that occurred during sign-in. Will be null if sign-in was successful.</li><li>`e.detail.providerData`: The raw sign-in data received from an OAuth flow sign-in. Maybe be null during successive sign-ins.</li></ul> | Fired when a sign-in completes successfully or unsuccessfully. If the sign-in failed, `e.detail.error` will be non-null.
 
 
 ### Methods
@@ -353,7 +353,11 @@ pwa-auth::part(signInButton) {
 ```
 </div>
 
+<div id="creatingKeys">
+
 ### Step 2: Create key(s)
+
+</div>
 
 You'll need to create one or more keys to let your users login. Creating a key takes about 2 minutes.
 
