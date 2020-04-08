@@ -69,10 +69,13 @@ Finally, `pwa-auth` can be headless; bring your own UI:
 ```html
 <pwa-auth appearance="none"></pwa-auth>
 ```
+
 ```javascript
-// Use your own UI to invoke pwa-auth sign-in
-const pwaAuth = document.querySelector("pwa-auth");
-myOwnSignInBtn.addEventHandler("click", () => pwaAuth.signIn("Microsoft")); // Or Google or Facebook
+<script>
+  // Use your own UI to invoke pwa-auth sign-in
+  const pwaAuth = document.querySelector("pwa-auth");
+  myOwnSignInBtn.addEventHandler("click", () => pwaAuth.signIn("Microsoft")); // Or Google or Facebook
+</script>
 ```
 
 </div>
@@ -170,17 +173,11 @@ If a user has signed-in previously, future sign-ins will be instantaneous. 😎 
 
 </div>
 
-<div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
-  <iframe
-    loading="lazy"
-    allow="geolocation; microphone; camera; midi; encrypted-media"
-    src="https://glitch.com/embed/#!/embed/pwa-auth-silent?previewSize=100&previewFirst=true&sidebarCollapsed=true"
-    alt="pwa-auth-silent on Glitch"
-    style="height: 100%; width: 100%; border: 0;">
-  </iframe>
-</div>
+![pwa-auth silent mode](https://github.com/pwa-builder/pwa-auth/raw/master/assets/first-cred.png)
 
-In the above sample, the user tapped Sign In and was automatically signed-in using the first saved credential; no OAuth dialogs, pop-ups, or redirects needed! 😎 The browser typically displays a "Signing in as..." info bar during this process.
+Try it: [live](https://pwa-auth-silent.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-silent?path=index.html:33:1)
+
+In the above screenshot, the user tapped Sign In and was automatically signed-in using the first saved credential; no OAuth dialogs, pop-ups, or redirects needed! 😎 The browser typically displays a "Signing in as..." info bar during this process.
 
 As an alternative, you can have the browser <em>prompt</em> the user to confirm his sign-in:
 
@@ -197,17 +194,11 @@ As an alternative, you can have the browser <em>prompt</em> the user to confirm 
 
 </div>
 
-<div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
-  <iframe
-    loading="lazy"
-    allow="geolocation; microphone; camera; midi; encrypted-media"
-    src="https://glitch.com/embed/#!/embed/pwa-auth-prompt?previewSize=100&previewFirst=true&sidebarCollapsed=true"
-    alt="pwa-auth-prompt on Glitch"
-    style="height: 100%; width: 100%; border: 0;">
-  </iframe>
-</div>
+![pwa-auth prompt mode](https://github.com/pwa-builder/pwa-auth/raw/master/assets/signin-prompt.png)
 
-In the above sample, the user taps `Sign In` and  the browser prompts him to sign-in using his stored credential.
+Try it: [live](https://pwa-auth-prompt.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-auth-prompt?path=index.html:33:1)
+
+In the above screenshot, the user taps `Sign In` and  the browser prompts him to sign-in using his stored credential.
 
 If the user had previously signed-in with multiple accounts (e.g. once with Google, once with Microsoft), he'll be given a choice of which provider to sign-in with:
 
@@ -312,7 +303,7 @@ You can style the different parts of pwa-auth using [CSS ::part selectors](https
 Jazz up the Sign In button:
 
 <div class="codeBlockHeader">
-  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/authButton/list.html">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/authButton/shadowPart.css">
   </copy-button>
 </div><div class="codeBlock">
 
