@@ -93,7 +93,7 @@ pwa-install::part(openButton) {
 
 <div id="rightSide">
 
-### Step 1: Add this code to your HTML page: 
+### Step 1: Add pwa-install to your page: 
 
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/installButton/installButton.html">
