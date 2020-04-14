@@ -7,9 +7,9 @@
 <div id="contentContainer">
 <div id="leftSide">
   
-## Using this component
+### Using this component
 
-## Install
+### Install
 
 There are two ways to use this component. For simple projects or just to get started fast, we recommend using the component by script tag. If your project is using [npm](https://www.npmjs.com/) then we recommend using the npm package.
 
@@ -41,7 +41,7 @@ Then you can use the element `<pwa-install></pwa-install>` anywhere in your temp
   </iframe>
 </div>
 
-# API
+### API
 
 ### Properties
 
@@ -66,7 +66,7 @@ Then you can use the element `<pwa-install></pwa-install>` anywhere in your temp
 | `getInstalledStatus()` | `Tell if the PWA is installed or not` |
 
 
-## Styling
+### Styling
 
 ### CSS Variables
 
