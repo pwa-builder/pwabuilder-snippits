@@ -6,16 +6,6 @@
 
 <div id="contentContainer">
 <div id="leftSide">
-
-<!-- Copy and Paste Me -->
-<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-  <iframe
-    src="https://glitch.com/embed/#!/embed/pwainstall?path=README.md&previewSize=100"
-    title="pwainstall on Glitch"
-    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-    style="height: 100%; width: 100%; border: 0;">
-  </iframe>
-</div>
   
 ## Using this component
 
@@ -40,9 +30,18 @@ There are two ways to use this component. For simple projects or just to get sta
 - import with `import '@pwabuilder/pwainstall'`
 
 Then you can use the element `<pwa-install></pwa-install>` anywhere in your template, JSX, html etc. 
-live demo: https://pwainstall.glitch.me
 
-## API
+<!-- Copy and Paste Me -->
+<div class="glitch-embed-wrap" style="height: 620px; width: 100%;">
+  <iframe
+    src="https://glitch.com/embed/#!/embed/pwainstall?path=README.md&previewSize=100"
+    title="pwainstall on Glitch"
+    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+# API
 
 ### Properties
 
@@ -94,9 +93,7 @@ pwa-install::part(openButton) {
 
 <div id="rightSide">
 
-### Step 1
-
-Add this code to your HTML page: 
+### Step 1: Add this code to your HTML page: 
 
 <div class="codeBlockHeader">
   <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/installButton/installButton.html">
