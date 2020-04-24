@@ -1,6 +1,6 @@
 <div id="headerDiv">
 
-## Sign-in with Microsoft, Google, or Facebook
+## Sign-in with Microsoft, Google, Facebook, or Apple
 
 </div>
 
@@ -8,7 +8,7 @@
 <div id="leftSide">
   
 ### Overview
-`pwa-auth` is a modern web component that lets your users sign-in/sign-up using their Microsoft, Google, or Facebook account. Your app receives their email address, name, and profile picture. [Built](https://github.com/pwa-builder/pwa-auth) with ❤ by the PWABuilder team.
+`pwa-auth` is a modern web component that lets your users sign-in/sign-up using their Microsoft, Google, Facebook, or Apple account. Your app receives their email address, name, and profile picture. [Built](https://github.com/pwa-builder/pwa-auth) with ❤ by the PWABuilder team.
 
 😎 Bonus: It's super lightweight, pulling in the authentication libraries only when the user tries to sign-in with one.
 
@@ -74,7 +74,7 @@ Finally, `pwa-auth` can be headless; bring your own UI:
 <script>
   // Use your own UI to invoke pwa-auth sign-in
   const pwaAuth = document.querySelector("pwa-auth");
-  myOwnSignInBtn.addEventHandler("click", () => pwaAuth.signIn("Microsoft")); // Or Google or Facebook
+  myOwnSignInBtn.addEventHandler("click", () => pwaAuth.signIn("Microsoft")); // Or Google, Facebook, or Apple
 </script>
 ```
 
@@ -231,7 +231,8 @@ When you add a `<pwa-auth>` component to your page, you'll need to specify one o
 <pwa-auth 
     microsoftkey="..."
     googlekey="..."
-    facebookkey="...">
+    facebookkey="..."
+    applekey="...">
 </pwa-auth>
 ```
 
@@ -241,6 +242,7 @@ To create a key, see:
 - [Creating a Microsoft key](https://aka.ms/pwaauthmskey)
 - [Creating a Google key](https://aka.ms/pwaauthgooglekey)
 - [Creating a Facebook key](https://aka.ms/pwaauthfbkey)
+- [Creating an Apple key](https://aka.ms/pwaauthapplekey)
 
 ## API
 
@@ -254,6 +256,8 @@ You can customize the appearance and behavior of pwa-auth component.
 | `microsoftKey` | `microsoftkey`  | The `Application (client) ID` of the Microsoft App you created. See [creating a Microsoft key](https://aka.ms/pwaauthmskey). header | `string \| null` | `null` |
 | `googleKey` | `googlekey`  | The `Client ID` of the Google credential you created. See [creating a Google key](https://aka.ms/pwaauthgooglekey) | `string \| null` | `null` |
 | `facebookKey` | `facebookkey`  | The `App ID` of the Facebook App you created. See [creating a Facebook key](https://aka.ms/pwaauthfbkey) | `string \| null`  | `null` |
+| `appleKey` | `applekey`  | The `ID` of the Apple Services ID you created. See [creating an Apple key](https://aka.ms/pwaauthapplekey) | `string \| null`  | `null` |
+| `appleRedirectUri` | `appleredirecturi`  | The URI that will be POSTed to by Apple during a sign-in. If not specified, this will default to the `location.href` of your web app. See [creating an Apple key](https://aka.ms/pwaauthapplekey) for more details. |
 | `signInButtonText` | `signinbuttontext` | The text of the `Sign In` button, displayed when `appearance="button"` | `string` | 'Sign in' |
 | `microsoftButtonText` | `microsoftbuttontext` | The label for the `Sign in with Microsoft` button | `string`  | 'Sign in with Microsoft' |
 | `googleButtonText` | `googlebuttontext` | The label for the `Sign in with Google` button | `string`  | 'Sign in with Google' |
