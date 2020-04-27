@@ -345,14 +345,15 @@ pwa-auth::part(signInButton) {
 ```html
 <script 
   type="module" 
-  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwaauth/dist/pwa-auth.js">
+  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwaauth@latest/dist/pwa-auth.min.js">
 </script>
 
 <!-- Add this where you want the Sign In button to show up -->
 <pwa-auth
   microsoftkey="..."
   googlekey="..."
-  facebookkey="...">
+  facebookkey="..."
+  applekey="...">
 </pwa-auth>
 ```
 </div>
@@ -368,6 +369,7 @@ You'll need to create one or more keys to let your users login. Creating a key t
 - [Create a Microsoft key](https://aka.ms/pwaauthmskey)
 - [Create a Google key](https://aka.ms/pwaauthgooglekey)
 - [Create a Facebook key](https://aka.ms/pwaauthfbkey)
+- [Create an Apple key](https://aka.ms/pwaauthapplekey)
 
 ### Step 3: Listen for `signin-completed` event
 
