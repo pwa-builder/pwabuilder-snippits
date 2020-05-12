@@ -77,3 +77,28 @@ You can also add the `<inking-toolbar></inking-toolbar>` element beneath the `<i
 ### Methods
 
 None
+
+</div>
+
+<div id="rightSide">
+
+### Step 1: Add pwa-inking to your page: 
+
+<div class="codeBlockHeader">
+  <copy-button codeurl="https://raw.githubusercontent.com/pwa-builder/pwabuilder-snippits/demo/src/inking/inking.html">
+  </copy-button>
+</div>
+
+<div class="codeBlock">
+ 
+```html
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwa-inking"
+></script>
+<inking-canvas name="myInkingCanvas"></inking-canvas>
+<inking-toolbar canvas="myInkingCanvas"></inking-toolbar>
+```
+</div>
+
+</div>
