@@ -43,9 +43,6 @@ You can also add the `<inking-toolbar></inking-toolbar>` element beneath the `<i
   </iframe>
 </div>
 
-## APIs
-
-## inking-canvas
 
 ### Properties
 
