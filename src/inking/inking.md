@@ -6,10 +6,6 @@
 
 <div id="contentContainer">
 <div id="leftSide">
-
-### Description
-
-A basic 2D inking canvas that supports pointer events (mouse, touch, and pen) and can be controlled through a complementary toolbar.
   
 ### Using this component
 
