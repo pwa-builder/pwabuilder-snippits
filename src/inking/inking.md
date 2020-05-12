@@ -78,6 +78,8 @@ You can also add the `<inking-toolbar></inking-toolbar>` element beneath the `<i
 
 None
 
+</div>
+
 <div id="rightSide">
 
 ### Step 1: Add pwa-inking to your page: 
