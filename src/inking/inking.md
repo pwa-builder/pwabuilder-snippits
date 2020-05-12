@@ -43,9 +43,9 @@ You can also add the `<inking-toolbar></inking-toolbar>` element beneath the `<i
   </iframe>
 </div>
 
-## APIs
+### APIs
 
-## inking-canvas
+### inking-canvas
 
 ### Properties
 
@@ -65,7 +65,7 @@ You can also add the `<inking-toolbar></inking-toolbar>` element beneath the `<i
 | `eraseAll()`                              | Deletes all canvas ink                                        |
 | `getScale()`                              | Returns canvas size relative to its content's aspect ratio    |
 
-## inking-toolbar
+### inking-toolbar
 
 ### Properties
 
